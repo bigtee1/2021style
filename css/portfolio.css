@@ -1,0 +1,336 @@
+:root{
+    --red: rgb(248, 124, 124);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s all linear;
+    outline: none;
+    list-style: none;
+}
+::selection{
+    background-color: var(--red);
+    color: gray;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--red);
+}
+html::-webkit-scrollbar-track{
+    background-color: gray;
+}
+body{
+    background-color: #111;
+    overflow-x: hidden;
+    padding-left: 20rem;
+}
+header .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 20rem;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+section {
+    min-height: 100vh;
+    padding: 2em;
+    padding-top: -2em;
+}
+.btn{
+    padding: .7rem 2em;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1em;
+}
+.btn:hover{
+    background-color: var(--red);
+}
+.heading{
+    text-align: center;
+    font-size: 3em;
+    margin: 0 6rem;
+    border-bottom: 2px solid var(--red);
+    color: white;
+    padding-top: 1em;
+}
+.heading span{
+    color: var(--red);
+}
+header .user img{
+    height: 8rem;
+    width: 8rem;
+    border: 5px solid red;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+header .user .name{
+    color: aliceblue;
+}
+header .user .post{
+    color: aliceblue;
+}
+header .nav-bar{
+    width: 100%;
+}
+header .nav-bar ul{
+    padding: 1em 1.2em;
+}
+header .nav-bar ul li a{
+    display: block;
+    background-color: #333;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: aliceblue;
+    border-radius: 50px;
+    font-size: 1em;
+}
+header .nav-bar ul li a:hover{
+    background-color: var(--red);
+}
+.home{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+.home h3{
+    font-size: 2em;
+    color: white;
+}
+.home h1{
+    font-size: 4em;
+    color: white;
+}
+.home p{
+    font-size: 1.2em;
+    color: white;
+    margin: .9em 0;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -2em;
+    padding: 3rem 0;
+}
+.about .row .info{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20rem;
+    padding: 4rem 2rem;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 1.4em;
+    padding: 1rem 0;
+    color: var(--red);
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: white;
+}
+.about .row .counter{
+   flex: 1 1 20rem;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.about .row .counter .box{
+    width: 10em;
+    text-align: center;
+    background-color: #333;
+    padding: 2rem;
+    margin: 1em;
+}
+.about .row .counter .box span{
+    font-size: 1.6em;
+    color: var(--red);
+}
+.about .row .counter .box h3{
+    font-size: 1.2em;
+    color: white;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    padding-left: 2rem;
+}
+.education .box-container .box{
+    width: 27rem;
+    background-color: ;
+    margin: .8rem 0;
+    padding-left: 2rem;
+    padding-bottom: 1em;
+    border-left: 2px solid white;
+    position: relative;
+}
+.education .box-container .box span{
+    background-color: aliceblue;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: .6em 1.2em;
+}
+.education .box-container .box h3{
+    color: aliceblue;
+    font-size: 1.5em;
+    padding-top: .5em;
+}
+.education .box-container .box p{
+    color: aliceblue;
+}
+.education .box-container .box:hover{
+    background-color: var(--red);
+}
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+.portfolio .box-container .box{
+  width: 10rem;
+  height: 10rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.portfolio .box-container .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+.portfolio .box-container .box::after{
+    transform: scale(1.2);
+}
+.contact-sub{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 5em;
+}
+.contact-sub .contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 10rem;
+    padding: 4rem 0;
+    color: #fff;
+}
+.contact-sub .contact-info h1{
+    margin: 1em 0;
+}
+.contact-sub .contact-input{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 17rem;
+}
+.contact-sub .contact-input input,textarea{
+    padding: .9em .7em;
+    margin: .8em 0;
+    color: var(--red);
+    border: none;
+    background-color: #333;
+}
+.checkbtn{
+    background-color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 1.5em;
+    color: #fff;
+    display: ;
+    position: fixed;
+    cursor: pointer;
+    top: .7em;
+    right: 1em;
+}
+#check{
+    display: none;
+    margin-left: 90rem;
+}
+@media (max-width: 768px){
+    html{
+        font-size: 8px;
+    }
+    header .header{
+        left: -50%;
+        transition: all .2s ease-out;
+    }
+    body{
+        padding: 0;
+    }
+    .about{
+        margin-top: 3rem;
+    }
+    .about .row{
+        margin-top: -3rem;
+        margin-bottom: 10rem;
+    }
+    .about .row .info{
+        padding-left: 2rem;
+        align-items: center;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .portfolio .box-container{
+        justify-content: center;
+    }
+    .portfolio .box-container .box{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .contact-sub .contact-info{
+        margin-top: -2rem;
+        align-items: center;
+        font-size: 70%;
+    }
+    .contact-sub .contact-info h3{
+        font-size: 2em;
+    }
+    .contact-sub .contact-input{
+        margin-top: -3rem;
+    }
+    #check{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+
+    }
+    #check:checked ~ header .header{
+        left: 0;
+    }
+    
+}
+@media(max-width: 320px){
+    .contact-sub .contact-input{
+        align-items: center;
+    }
+}
