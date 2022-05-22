@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html and css crash course</title>
+        <link rel="stylesheet" href="css/crash.css">
+        <script type="text/javascript">
+            const mobilebtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav');
+
+                mobilebtn.addEventListener('click' , () => {
+                    nav.classList.add('menu-btn');
+                })
+
+        </script>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="container-1">
+                <a class="logo" href="#">Remeber<span>That</span></a>
+                
+                <label for="checkbtn" class="check" id="mobile-cta">&#9776;</label>
+                
+                <nav>
+                    <ul class="primary-nav">
+                        <li class="current"><a href="">Home</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Price</a></li>
+                    </ul>
+
+                    <ul class="secondary-nav">
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Go Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">it's Nitty &amp; Gritty</p>
+                    <h1>A Task App That Doesn't Sink</h1>
+
+                    <div class="hero-cta">
+                        <a href="" class="primary-cta">Try for free</a>
+                        <a href="" class="secondary-cta">
+                            watch a video
+                        </a>
+                    </div>
+                </div>
+                <img src="../img1.jfif" class="hero-img" alt="">
+            </div>
+        </section>
+        <section class="features-section">
+            <ul class="features-list">
+                <li>unlimited apps</li>
+                <li>SMS bulk message</li>
+                <li>contact reminder</li>
+                <li>social media annocement</li>
+                <li>Real time collaboration</li>
+                <li>other awesome features</li>
+            </ul>
+
+            <img src="../lil.jfif" alt="colorful apartment">
+        </section>
+
+        <section class="testimonials-sections">
+            <ul>
+                <li>
+                    <img src="../mate.jfif" alt="">
+
+                <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptate inventore accusamus sit fuga neque.</blockquote>
+                <cite>- jen doe</cite>
+                </li>
+
+                <li>
+                    <img src="../mate.jfif" alt="">
+
+                <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptate inventore accusamus sit fuga neque.</blockquote>
+                <cite>- jen doe</cite>
+                </li>
+
+                <li>
+                    <img src="../mate.jfif" alt="">
+
+                <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptate inventore accusamus sit fuga neque.</blockquote>
+                <cite>- jen doe</cite>
+                </li>
+            </ul>
+
+        </section>
+        
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>contact</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="ypur name">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        
+                        <input type="submit" class="send-message-cta" value="send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
