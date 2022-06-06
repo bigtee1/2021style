@@ -33,7 +33,7 @@ body{
     overflow-x: hidden;
     padding-left: 20rem;
 }
-header .header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -278,8 +278,9 @@ header .nav-bar ul li a:hover{
     html{
         font-size: 8px;
     }
-    header .header{
-        left: -50%;
+    .header{
+        position: absolute;
+        left: -100%;
         transition: all .2s ease-out;
     }
     body{
@@ -324,7 +325,7 @@ header .nav-bar ul li a:hover{
         display: block;
 
     }
-    #check:checked ~ header .header{
+    #check:checked ~ .header{
         left: 0;
     }
     
